@@ -1,0 +1,11 @@
+{ "main": "static-just"
+, "repositories":
+  { "static-toolchain":
+    { "repository":
+      {"type": "file", "path": "etc/toolchain", "pragma": {"to_git": true}}
+    , "bindings": {"rules": "rules-cc", "base": "imported-toolchain"}
+    }
+  , "static-just":
+    {"repository": {"type": "file", "path": "."}, "bindings": {"just": "just"}}
+  }
+}
