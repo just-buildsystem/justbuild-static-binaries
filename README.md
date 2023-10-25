@@ -24,7 +24,7 @@ binaries with the following hashes will be produced:
 
 First, install [Justbuild](https://github.com/just-buildsystem/justbuild) and
 make sure to fulfill the
-[toolchain requirements](https://github.com/just-buildsystem/bootstrappable-toolchain/README.md#initial-requirements).
+[toolchain requirements](https://github.com/just-buildsystem/bootstrappable-toolchain#initial-requirements).
 
 For building, clone this repository and run:
 
