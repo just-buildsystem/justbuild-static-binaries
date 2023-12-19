@@ -535,8 +535,8 @@
     { "repository":
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/justbuild"
-      , "branch": "v1.2.3"
-      , "commit": "45e9c1c85399f00372ad8b72894979a0002d8f95"
+      , "branch": "v1.2.4"
+      , "commit": "215e6afab93d28aeea54cb2c657afda0e5453307"
       }
     , "bindings":
       { "rules": "just/rules-just"
@@ -762,8 +762,8 @@
     { "repository":
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/justbuild"
-      , "branch": "v1.2.3"
-      , "commit": "45e9c1c85399f00372ad8b72894979a0002d8f95"
+      , "branch": "v1.2.4"
+      , "commit": "215e6afab93d28aeea54cb2c657afda0e5453307"
       , "subdir": "etc/patches"
       }
     }
@@ -801,8 +801,8 @@
     { "repository":
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/justbuild"
-      , "branch": "v1.2.3"
-      , "commit": "45e9c1c85399f00372ad8b72894979a0002d8f95"
+      , "branch": "v1.2.4"
+      , "commit": "215e6afab93d28aeea54cb2c657afda0e5453307"
       , "subdir": "rules"
       }
     , "target_root": "just/defaults"
@@ -920,8 +920,8 @@
     { "repository":
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/justbuild"
-      , "branch": "v1.2.3"
-      , "commit": "45e9c1c85399f00372ad8b72894979a0002d8f95"
+      , "branch": "v1.2.4"
+      , "commit": "215e6afab93d28aeea54cb2c657afda0e5453307"
       , "subdir": "etc/defaults"
       }
     }
@@ -929,8 +929,8 @@
     { "repository":
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/justbuild"
-      , "branch": "v1.2.3"
-      , "commit": "45e9c1c85399f00372ad8b72894979a0002d8f95"
+      , "branch": "v1.2.4"
+      , "commit": "215e6afab93d28aeea54cb2c657afda0e5453307"
       , "subdir": "etc/import"
       }
     }
