@@ -259,7 +259,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "e747124efaca4e92f3c6beb504a15e4152f5bf8f"
+      , "commit": "816d0f68b162ec7096442a60d6f818ae45383e76"
       , "subdir": "etc/patches"
       }
     }
@@ -274,10 +274,10 @@
   , "imported-toolchain/rules":
     { "repository":
       { "type": "archive"
-      , "content": "114266e2768df3fca92c13c359fb9dfccb53aa97"
-      , "fetch": "https://github.com/just-buildsystem/rules-cc/archive/1f8e8d060c0c554f4374351d350bf3d661126579.tar.gz"
-      , "sha256": "3689742cfa30a36538ffee5d56f4d2705d8d5e10e2a1c161740d1f6fc44dd42e"
-      , "subdir": "rules-cc-1f8e8d060c0c554f4374351d350bf3d661126579/rules"
+      , "content": "2b5d40c87b685c8bd085a2edca7b442a2448f146"
+      , "fetch": "https://github.com/just-buildsystem/rules-cc/archive/5b820def58f4d4ec30f0b3e4e8db49ce1fef8dd9.tar.gz"
+      , "sha256": "a8042554028de60de8405f4a7be79eb6675e46aedf1753eaab908192e3eb0f57"
+      , "subdir": "rules-cc-5b820def58f4d4ec30f0b3e4e8db49ce1fef8dd9/rules"
       }
     }
   , "imported-toolchain/rules/gcc":
@@ -324,7 +324,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "e747124efaca4e92f3c6beb504a15e4152f5bf8f"
+      , "commit": "816d0f68b162ec7096442a60d6f818ae45383e76"
       , "subdir": "etc/scripts"
       }
     }
@@ -482,7 +482,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "e747124efaca4e92f3c6beb504a15e4152f5bf8f"
+      , "commit": "816d0f68b162ec7096442a60d6f818ae45383e76"
       , "subdir": "src/bootstrap"
       }
     }
@@ -491,7 +491,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "e747124efaca4e92f3c6beb504a15e4152f5bf8f"
+      , "commit": "816d0f68b162ec7096442a60d6f818ae45383e76"
       , "subdir": "src/compilers"
       }
     }
@@ -500,7 +500,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "e747124efaca4e92f3c6beb504a15e4152f5bf8f"
+      , "commit": "816d0f68b162ec7096442a60d6f818ae45383e76"
       , "subdir": "etc/defaults"
       }
     }
@@ -509,7 +509,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "e747124efaca4e92f3c6beb504a15e4152f5bf8f"
+      , "commit": "816d0f68b162ec7096442a60d6f818ae45383e76"
       , "subdir": "etc/imports"
       }
     }
@@ -518,7 +518,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "e747124efaca4e92f3c6beb504a15e4152f5bf8f"
+      , "commit": "816d0f68b162ec7096442a60d6f818ae45383e76"
       , "subdir": "toolchains"
       }
     }
@@ -527,7 +527,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "e747124efaca4e92f3c6beb504a15e4152f5bf8f"
+      , "commit": "816d0f68b162ec7096442a60d6f818ae45383e76"
       , "subdir": "src/tools"
       }
     }
