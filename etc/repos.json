@@ -104,7 +104,7 @@
       }
     , "target_root": "imported-toolchain/imports"
     , "target_file_name": "boringssl.TARGETS"
-    , "bindings": {"rules": "imported-toolchain/rules/static-build"}
+    , "bindings": {"rules": "imported-toolchain/rules/tools"}
     }
   , "imported-toolchain/imports/config-3d5db9e":
     { "repository":
@@ -244,7 +244,7 @@
       }
     , "target_root": "imported-toolchain/imports"
     , "target_file_name": "zlib.TARGETS"
-    , "bindings": {"rules": "imported-toolchain/rules/static-build"}
+    , "bindings": {"rules": "imported-toolchain/rules/tools"}
     }
   , "imported-toolchain/make-latest":
     { "repository": "imported-toolchain/toolchains"
@@ -259,7 +259,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "816d0f68b162ec7096442a60d6f818ae45383e76"
+      , "commit": "b00ef322be2fd3329b6e4844f402387c7ace91ab"
       , "subdir": "etc/patches"
       }
     }
@@ -286,8 +286,7 @@
     , "rule_root": "imported-toolchain/rules"
     , "target_file_name": "gcc.TARGETS"
     , "bindings":
-      { "make": "imported-toolchain/stage-0/make"
-      , "busybox": "imported-toolchain/stage-0/busybox"
+      { "base": "imported-toolchain/rules/stage-1"
       , "gcc": "imported-toolchain/stage-1/gcc"
       }
     }
@@ -308,24 +307,14 @@
       , "gcc": "imported-toolchain/stage-0/gcc"
       }
     }
-  , "imported-toolchain/rules/static-build":
+  , "imported-toolchain/rules/tools":
     { "repository": "imported-toolchain/rules"
     , "target_root": "imported-toolchain/defaults"
     , "rule_root": "imported-toolchain/rules"
-    , "target_file_name": "static-build.TARGETS"
+    , "target_file_name": "tools.TARGETS"
     , "bindings":
-      { "make": "imported-toolchain/stage-0/make"
-      , "busybox": "imported-toolchain/stage-0/busybox"
+      { "base": "imported-toolchain/rules/gcc"
       , "gcc-musl": "imported-toolchain/compilers/gcc-13.2.0-musl"
-      }
-    }
-  , "imported-toolchain/scripts":
-    { "repository":
-      { "type": "git"
-      , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
-      , "branch": "master"
-      , "commit": "816d0f68b162ec7096442a60d6f818ae45383e76"
-      , "subdir": "etc/scripts"
       }
     }
   , "imported-toolchain/stage-0/binutils":
@@ -336,7 +325,6 @@
       { "rules": "imported-toolchain/rules/stage-0"
       , "busybox": "imported-toolchain/stage-0/busybox"
       , "make": "imported-toolchain/stage-0/make"
-      , "scripts": "imported-toolchain/scripts"
       }
     }
   , "imported-toolchain/stage-0/busybox":
@@ -351,7 +339,6 @@
     , "target_file_name": "stage-0-busybox.TARGETS"
     , "bindings":
       { "rules": "imported-toolchain/rules/stage-0"
-      , "scripts": "imported-toolchain/scripts"
       , "gcc": "imported-toolchain/stage-0/gcc"
       , "make": "imported-toolchain/stage-0/make"
       }
@@ -433,7 +420,7 @@
       }
     , "target_root": "imported-toolchain/tools"
     , "target_file_name": "busybox-1.36.TARGETS"
-    , "bindings": {"rules": "imported-toolchain/rules/static-build"}
+    , "bindings": {"rules": "imported-toolchain/rules/tools"}
     }
   , "imported-toolchain/tools/cmake-3.27.1":
     { "repository":
@@ -446,7 +433,7 @@
     , "target_root": "imported-toolchain/tools"
     , "target_file_name": "cmake-3.27.TARGETS"
     , "bindings":
-      { "rules": "imported-toolchain/rules/static-build"
+      { "rules": "imported-toolchain/rules/tools"
       , "ssl": "imported-toolchain/imports/boringssl"
       }
     }
@@ -460,7 +447,7 @@
       }
     , "target_root": "imported-toolchain/tools"
     , "target_file_name": "make-4.4.TARGETS"
-    , "bindings": {"rules": "imported-toolchain/rules/static-build"}
+    , "bindings": {"rules": "imported-toolchain/rules/tools"}
     }
   , "imported-toolchain/tools/python-3.12.0":
     { "repository":
@@ -473,7 +460,7 @@
     , "target_root": "imported-toolchain/tools"
     , "target_file_name": "python-3.12.TARGETS"
     , "bindings":
-      { "rules": "imported-toolchain/rules/static-build"
+      { "rules": "imported-toolchain/rules/tools"
       , "zlib": "imported-toolchain/imports/zlib"
       }
     }
@@ -482,7 +469,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "816d0f68b162ec7096442a60d6f818ae45383e76"
+      , "commit": "b00ef322be2fd3329b6e4844f402387c7ace91ab"
       , "subdir": "src/bootstrap"
       }
     }
@@ -491,7 +478,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "816d0f68b162ec7096442a60d6f818ae45383e76"
+      , "commit": "b00ef322be2fd3329b6e4844f402387c7ace91ab"
       , "subdir": "src/compilers"
       }
     }
@@ -500,7 +487,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "816d0f68b162ec7096442a60d6f818ae45383e76"
+      , "commit": "b00ef322be2fd3329b6e4844f402387c7ace91ab"
       , "subdir": "etc/defaults"
       }
     }
@@ -509,7 +496,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "816d0f68b162ec7096442a60d6f818ae45383e76"
+      , "commit": "b00ef322be2fd3329b6e4844f402387c7ace91ab"
       , "subdir": "etc/imports"
       }
     }
@@ -518,7 +505,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "816d0f68b162ec7096442a60d6f818ae45383e76"
+      , "commit": "b00ef322be2fd3329b6e4844f402387c7ace91ab"
       , "subdir": "toolchains"
       }
     }
@@ -527,7 +514,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "816d0f68b162ec7096442a60d6f818ae45383e76"
+      , "commit": "b00ef322be2fd3329b6e4844f402387c7ace91ab"
       , "subdir": "src/tools"
       }
     }
