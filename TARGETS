@@ -2,13 +2,15 @@
 , "just":
   { "type": "export"
   , "target": "config"
-  , "flexible_config": ["OS", "ARCH", "TARGET_ARCH", "TOOLCHAIN_CONFIG", "ENV"]
+  , "flexible_config":
+    ["OS", "ARCH", "TARGET_ARCH", "TOOLCHAIN_CONFIG", "DEBUG", "ENV"]
   , "fixed_config": {"CONFIG_TARGET": ["@", "just", "", "installed just"]}
   }
 , "just-mr":
   { "type": "export"
   , "target": "config"
-  , "flexible_config": ["OS", "ARCH", "TARGET_ARCH", "TOOLCHAIN_CONFIG", "ENV"]
+  , "flexible_config":
+    ["OS", "ARCH", "TARGET_ARCH", "TOOLCHAIN_CONFIG", "DEBUG", "ENV"]
   , "fixed_config": {"CONFIG_TARGET": ["@", "just", "", "installed just-mr"]}
   }
 , "config":
