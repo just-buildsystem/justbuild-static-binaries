@@ -18,19 +18,23 @@
   , "arguments_config": ["CONFIG_TARGET", "TOOLCHAIN_CONFIG"]
   , "target": {"type": "var", "name": "CONFIG_TARGET"}
   , "config":
-    { "type": "singleton_map"
-    , "key": "TOOLCHAIN_CONFIG"
-    , "value":
-      { "type": "map_union"
-      , "$1":
-        [ {"type": "singleton_map", "key": "FAMILY", "value": "gnu"}
-        , {"type": "singleton_map", "key": "STATIC_RUNLIBS", "value": true}
-        , { "type": "var"
-          , "name": "TOOLCHAIN_CONFIG"
-          , "default": {"type": "empty_map"}
+    { "type": "let*"
+    , "bindings":
+      [ ["FINAL_LDFLAGS", ["-l:mimalloc.o"]]
+      , [ "TOOLCHAIN_CONFIG"
+        , { "type": "map_union"
+          , "$1":
+            [ {"type": "singleton_map", "key": "FAMILY", "value": "gnu"}
+            , {"type": "singleton_map", "key": "STATIC_RUNLIBS", "value": true}
+            , { "type": "var"
+              , "name": "TOOLCHAIN_CONFIG"
+              , "default": {"type": "empty_map"}
+              }
+            ]
           }
         ]
-      }
+      ]
+    , "body": {"type": "env", "vars": ["FINAL_LDFLAGS", "TOOLCHAIN_CONFIG"]}
     }
   }
 }

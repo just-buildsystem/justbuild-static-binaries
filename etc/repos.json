@@ -53,6 +53,7 @@
       , "mpc": "imported-toolchain/imports/mpc-1.3.1"
       , "mpfr": "imported-toolchain/imports/mpfr-4.2.1"
       , "gcc": "imported-toolchain/compilers/gcc-13.2.0-native"
+      , "mimalloc": "imported-toolchain/imports/mimalloc-2.1.2"
       }
     }
   , "imported-toolchain/compilers/gcc-13.2.0-native":
@@ -136,6 +137,17 @@
       , "sha256": "995bc76ccf0c40d752b5ea67c022232a17eef6c9ec80ea74ea742e3c19992813"
       , "subdir": "linux-headers-4.19.88-1"
       , "pragma": {"special": "resolve-partially"}
+      }
+    , "target_root": "imported-toolchain/imports"
+    , "target_file_name": "files.TARGETS"
+    }
+  , "imported-toolchain/imports/mimalloc-2.1.2":
+    { "repository":
+      { "type": "archive"
+      , "content": "da9d9ced476e35074380f3e240b59970dc443cd8"
+      , "fetch": "https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.2.tar.gz"
+      , "sha256": "2b1bff6f717f9725c70bf8d79e4786da13de8a270059e4ba0bdd262ae7be46eb"
+      , "subdir": "mimalloc-2.1.2"
       }
     , "target_root": "imported-toolchain/imports"
     , "target_file_name": "files.TARGETS"
@@ -259,7 +271,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "1dd86efdebb18ebf099396f45b366677b66a5cfd"
+      , "commit": "67e7ba44cf7cf845cbb7f0f41e423ed3b9f1d7c6"
       , "subdir": "etc/patches"
       }
     }
@@ -469,7 +481,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "1dd86efdebb18ebf099396f45b366677b66a5cfd"
+      , "commit": "67e7ba44cf7cf845cbb7f0f41e423ed3b9f1d7c6"
       , "subdir": "src/bootstrap"
       }
     }
@@ -478,7 +490,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "1dd86efdebb18ebf099396f45b366677b66a5cfd"
+      , "commit": "67e7ba44cf7cf845cbb7f0f41e423ed3b9f1d7c6"
       , "subdir": "src/compilers"
       }
     }
@@ -487,7 +499,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "1dd86efdebb18ebf099396f45b366677b66a5cfd"
+      , "commit": "67e7ba44cf7cf845cbb7f0f41e423ed3b9f1d7c6"
       , "subdir": "etc/defaults"
       }
     }
@@ -496,7 +508,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "1dd86efdebb18ebf099396f45b366677b66a5cfd"
+      , "commit": "67e7ba44cf7cf845cbb7f0f41e423ed3b9f1d7c6"
       , "subdir": "etc/imports"
       }
     }
@@ -505,7 +517,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "1dd86efdebb18ebf099396f45b366677b66a5cfd"
+      , "commit": "67e7ba44cf7cf845cbb7f0f41e423ed3b9f1d7c6"
       , "subdir": "toolchains"
       }
     }
@@ -514,7 +526,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "1dd86efdebb18ebf099396f45b366677b66a5cfd"
+      , "commit": "67e7ba44cf7cf845cbb7f0f41e423ed3b9f1d7c6"
       , "subdir": "src/tools"
       }
     }
