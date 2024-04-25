@@ -271,7 +271,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "67e7ba44cf7cf845cbb7f0f41e423ed3b9f1d7c6"
+      , "commit": "2ffa33b77cab2e30b912e14bb839f491630ceefb"
       , "subdir": "etc/patches"
       }
     }
@@ -481,7 +481,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "67e7ba44cf7cf845cbb7f0f41e423ed3b9f1d7c6"
+      , "commit": "2ffa33b77cab2e30b912e14bb839f491630ceefb"
       , "subdir": "src/bootstrap"
       }
     }
@@ -490,7 +490,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "67e7ba44cf7cf845cbb7f0f41e423ed3b9f1d7c6"
+      , "commit": "2ffa33b77cab2e30b912e14bb839f491630ceefb"
       , "subdir": "src/compilers"
       }
     }
@@ -499,7 +499,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "67e7ba44cf7cf845cbb7f0f41e423ed3b9f1d7c6"
+      , "commit": "2ffa33b77cab2e30b912e14bb839f491630ceefb"
       , "subdir": "etc/defaults"
       }
     }
@@ -508,7 +508,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "67e7ba44cf7cf845cbb7f0f41e423ed3b9f1d7c6"
+      , "commit": "2ffa33b77cab2e30b912e14bb839f491630ceefb"
       , "subdir": "etc/imports"
       }
     }
@@ -517,7 +517,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "67e7ba44cf7cf845cbb7f0f41e423ed3b9f1d7c6"
+      , "commit": "2ffa33b77cab2e30b912e14bb839f491630ceefb"
       , "subdir": "toolchains"
       }
     }
@@ -526,7 +526,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "67e7ba44cf7cf845cbb7f0f41e423ed3b9f1d7c6"
+      , "commit": "2ffa33b77cab2e30b912e14bb839f491630ceefb"
       , "subdir": "src/tools"
       }
     }
