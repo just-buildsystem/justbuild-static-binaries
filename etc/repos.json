@@ -12,7 +12,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/rules-cc"
       , "branch": "master"
-      , "commit": "7f1e6af152c4d88751a3d0bab7924f8cdbe42cd0"
+      , "commit": "3a1dac200d24a1c34f7a20f1c8feb743fc2aa141"
       , "subdir": "rules"
       }
     }
