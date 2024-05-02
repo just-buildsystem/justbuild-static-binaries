@@ -16,7 +16,7 @@
 set -eu
 
 : ${JUST_REPO:=https://github.com/just-buildsystem/justbuild}
-: ${JUST_BRANCH:=v1.2.5}
+: ${JUST_BRANCH:=v1.3.0-beta1}
 : ${TC_REPO:=https://github.com/just-buildsystem/bootstrappable-toolchain}
 : ${TC_BRANCH:=master}
 : ${TC_NAME:=gcc-13.2.0-musl+tools}
