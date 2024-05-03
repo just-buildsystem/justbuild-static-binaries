@@ -20,15 +20,12 @@ set -eu
 : ${TC_REPO:=https://github.com/just-buildsystem/bootstrappable-toolchain}
 : ${TC_BRANCH:=master}
 : ${TC_NAME:=gcc-13.2.0-musl+tools}
-: ${RULES_REPO:=https://github.com/just-buildsystem/rules-cc}
-: ${RULES_BRANCH:=master}
 
 cd $(dirname $0)
 
 cat repos.template.json \
-  | just-import-git -C - --as rules-cc -b ${RULES_BRANCH} ${RULES_REPO} rules \
   | just-import-git -C - --as imported-toolchain -b ${TC_BRANCH} ${TC_REPO} "${TC_NAME}" \
-  | just-import-git -C - --as just -b ${JUST_BRANCH} ${JUST_REPO} just --map toolchain static-toolchain \
+  | just-import-git -C - --as just -b ${JUST_BRANCH} ${JUST_REPO} just --map toolchain imported-toolchain \
   | ./json-format.py \
   > repos.json
 

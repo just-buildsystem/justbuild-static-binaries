@@ -1,5 +1,0 @@
-{ "defaults":
-  { "type": ["@", "rules", "patch", "defaults"]
-  , "base": [["@", "base", "patch", "defaults"]]
-  }
-}

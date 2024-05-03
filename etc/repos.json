@@ -1,21 +1,7 @@
 { "main": "static-just"
 , "repositories":
-  { "static-toolchain":
-    { "repository":
-      {"type": "file", "path": "etc/toolchain", "pragma": {"to_git": true}}
-    , "bindings": {"rules": "rules-cc", "base": "imported-toolchain"}
-    }
-  , "static-just":
+  { "static-just":
     {"repository": {"type": "file", "path": "."}, "bindings": {"just": "just"}}
-  , "rules-cc":
-    { "repository":
-      { "type": "git"
-      , "repository": "https://github.com/just-buildsystem/rules-cc"
-      , "branch": "master"
-      , "commit": "7acb2bbcc28dfc4c01967b65678c93b1e5dd7d85"
-      , "subdir": "rules"
-      }
-    }
   , "imported-toolchain":
     { "repository": "imported-toolchain/toolchains"
     , "target_file_name": "compiler+tools.TARGETS"
@@ -820,7 +806,7 @@
       }
     , "target_root": "just/defaults"
     , "rule_root": "just/rules"
-    , "bindings": {"toolchain": "static-toolchain"}
+    , "bindings": {"toolchain": "imported-toolchain"}
     }
   , "just/rules-absl":
     { "repository": "just/rules"

@@ -25,6 +25,7 @@
         , { "type": "map_union"
           , "$1":
             [ {"type": "singleton_map", "key": "FAMILY", "value": "gnu"}
+            , {"type": "singleton_map", "key": "BUILD_STATIC", "value": true}
             , {"type": "singleton_map", "key": "STATIC_RUNLIBS", "value": true}
             , { "type": "var"
               , "name": "TOOLCHAIN_CONFIG"

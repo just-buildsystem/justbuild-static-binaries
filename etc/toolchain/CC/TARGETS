@@ -1,6 +1,0 @@
-{ "defaults":
-  { "type": ["@", "rules", "CC", "defaults"]
-  , "base": [["@", "base", "CC", "defaults"]]
-  , "LDFLAGS": ["-static"]
-  }
-}
