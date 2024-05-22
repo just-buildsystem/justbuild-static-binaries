@@ -8,7 +8,7 @@
     , "bindings":
       { "rules": "imported-toolchain/rules"
       , "tools": "imported-toolchain/tools-all"
-      , "compiler": "imported-toolchain/gcc-13.2.0-musl"
+      , "compiler": "imported-toolchain/gcc-14.1.0-musl"
       }
     }
   , "imported-toolchain/busybox-latest":
@@ -25,40 +25,6 @@
     , "bindings":
       { "rules": "imported-toolchain/rules"
       , "cmake": "imported-toolchain/tools/cmake-3.27.1"
-      }
-    }
-  , "imported-toolchain/compilers/gcc-13.2.0-musl":
-    { "repository": "imported-toolchain/compilers"
-    , "target_file_name": "gcc-13-musl.TARGETS"
-    , "bindings":
-      { "rules": "imported-toolchain/rules/gcc"
-      , "musl-cross-make": "imported-toolchain/imports/musl-cross-make-fe915821"
-      , "binutils": "imported-toolchain/imports/binutils-latest"
-      , "musl": "imported-toolchain/imports/musl-1.2.4"
-      , "gmp": "imported-toolchain/imports/gmp-6.3.0"
-      , "mpc": "imported-toolchain/imports/mpc-1.3.1"
-      , "mpfr": "imported-toolchain/imports/mpfr-4.2.1"
-      , "gcc": "imported-toolchain/compilers/gcc-13.2.0-native"
-      , "mimalloc": "imported-toolchain/imports/mimalloc-2.1.2"
-      }
-    }
-  , "imported-toolchain/compilers/gcc-13.2.0-native":
-    { "repository":
-      { "type": "archive"
-      , "content": "c88c4e3f76d499c613970283fde3c1da3d11e809"
-      , "fetch": "https://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.gz"
-      , "sha256": "8cb4be3796651976f94b9356fa08d833524f62420d6292c5033a9a26af315078"
-      , "subdir": "gcc-13.2.0"
-      }
-    , "target_root": "imported-toolchain/compilers"
-    , "target_file_name": "gcc-13-native.TARGETS"
-    , "bindings":
-      { "rules": "imported-toolchain/rules/gcc"
-      , "binutils": "imported-toolchain/imports/binutils-latest"
-      , "gmp": "imported-toolchain/imports/gmp-6.3.0"
-      , "mpc": "imported-toolchain/imports/mpc-1.3.1"
-      , "mpfr": "imported-toolchain/imports/mpfr-4.2.1"
-      , "patches": "imported-toolchain/patches"
       }
     }
   , "imported-toolchain/compilers/gcc-14.1.0-musl":
@@ -95,12 +61,12 @@
       , "patches": "imported-toolchain/patches"
       }
     }
-  , "imported-toolchain/gcc-13.2.0-musl":
+  , "imported-toolchain/gcc-14.1.0-musl":
     { "repository": "imported-toolchain/toolchains"
     , "target_file_name": "gcc.TARGETS"
     , "bindings":
       { "rules": "imported-toolchain/rules"
-      , "gcc": "imported-toolchain/compilers/gcc-13.2.0-musl"
+      , "gcc": "imported-toolchain/compilers/gcc-14.1.0-musl"
       }
     }
   , "imported-toolchain/imports/binutils-latest":
@@ -554,8 +520,8 @@
     { "repository":
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/justbuild"
-      , "branch": "v1.3.0"
-      , "commit": "a7be2417f358049e6a0e28e01bc4020d8de2fdc5"
+      , "branch": "v1.3.1"
+      , "commit": "b248838ed0f01bc5824caee3a555e7fd22d5ad10"
       }
     , "bindings":
       { "rules": "just/rules-just"
@@ -792,8 +758,8 @@
     { "repository":
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/justbuild"
-      , "branch": "v1.3.0"
-      , "commit": "a7be2417f358049e6a0e28e01bc4020d8de2fdc5"
+      , "branch": "v1.3.1"
+      , "commit": "b248838ed0f01bc5824caee3a555e7fd22d5ad10"
       , "subdir": "etc/patches"
       }
     }
@@ -834,8 +800,8 @@
     { "repository":
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/justbuild"
-      , "branch": "v1.3.0"
-      , "commit": "a7be2417f358049e6a0e28e01bc4020d8de2fdc5"
+      , "branch": "v1.3.1"
+      , "commit": "b248838ed0f01bc5824caee3a555e7fd22d5ad10"
       , "subdir": "rules"
       }
     , "target_root": "just/defaults"
@@ -937,7 +903,7 @@
       }
     , "target_root": "just/import targets"
     , "target_file_name": "TARGETS.boringssl"
-    , "bindings": {"rules": "just/rules-boringssl"}
+    , "bindings": {"rules": "just/rules-boringssl", "patches": "just/patches"}
     }
   , "just/zlib":
     { "repository":
@@ -956,8 +922,8 @@
     { "repository":
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/justbuild"
-      , "branch": "v1.3.0"
-      , "commit": "a7be2417f358049e6a0e28e01bc4020d8de2fdc5"
+      , "branch": "v1.3.1"
+      , "commit": "b248838ed0f01bc5824caee3a555e7fd22d5ad10"
       , "subdir": "etc/defaults"
       }
     }
@@ -965,8 +931,8 @@
     { "repository":
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/justbuild"
-      , "branch": "v1.3.0"
-      , "commit": "a7be2417f358049e6a0e28e01bc4020d8de2fdc5"
+      , "branch": "v1.3.1"
+      , "commit": "b248838ed0f01bc5824caee3a555e7fd22d5ad10"
       , "subdir": "etc/import"
       }
     }

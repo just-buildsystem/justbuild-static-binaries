@@ -16,10 +16,10 @@
 set -eu
 
 : ${JUST_REPO:=https://github.com/just-buildsystem/justbuild}
-: ${JUST_BRANCH:=v1.3.0}
+: ${JUST_BRANCH:=v1.3.1}
 : ${TC_REPO:=https://github.com/just-buildsystem/bootstrappable-toolchain}
 : ${TC_BRANCH:=master}
-: ${TC_NAME:=gcc-13.2.0-musl+tools}
+: ${TC_NAME:=gcc-14.1.0-musl+tools}
 
 cd $(dirname $0)
 
