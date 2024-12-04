@@ -1,12 +1,12 @@
 {
   "bin/just": {
     "file_type": "x",
-    "id": "3230ce91413325dfb0a44cda31648fb6b5a35fd8",
-    "size": 28613024
+    "id": "c651ea4e5d05ec0797c63fc75c1a2ed88eabf8c9",
+    "size": 28613152
   },
   "bin/just-mr": {
     "file_type": "x",
-    "id": "df7b527e07d66a4b4a2ad082e31822f264d4dcef",
-    "size": 28017144
+    "id": "463c301faf5a8d18792278fe82201c608c526ce7",
+    "size": 28013224
   }
 }
