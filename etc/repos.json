@@ -257,9 +257,20 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "2e5e11a05c18b6cec59eaddb312869bef4805702"
+      , "commit": "b727fce66b3601bddf4f37d64a620caba5e8a786"
       , "subdir": "etc/patches"
       }
+    }
+  , "imported-toolchain/patches/busybox-1593":
+    { "repository":
+      { "type": "foreign file"
+      , "content": "5c8fd3526a514ff64fd3d31b9a849d0649e0d197"
+      , "fetch": "https://bugs.busybox.net/attachment.cgi?id=9751"
+      , "sha256": "6671a12c48dbcefb653fc8403d1f103a1e2eba4a49b1ee9a9c27da8aa2db80d4"
+      , "name": "remove-cbq.patch"
+      }
+    , "target_root": "imported-toolchain/imports"
+    , "target_file_name": "empty.TARGETS"
     }
   , "imported-toolchain/python-latest":
     { "repository": "imported-toolchain/toolchains"
@@ -343,6 +354,7 @@
       { "rules": "imported-toolchain/rules/stage-0"
       , "gcc": "imported-toolchain/stage-0/gcc"
       , "make": "imported-toolchain/stage-0/make"
+      , "patch-cbq": "imported-toolchain/patches/busybox-1593"
       }
     }
   , "imported-toolchain/stage-0/gcc":
@@ -422,7 +434,10 @@
       }
     , "target_root": "imported-toolchain/tools"
     , "target_file_name": "busybox-1.36.TARGETS"
-    , "bindings": {"rules": "imported-toolchain/rules/tools"}
+    , "bindings":
+      { "rules": "imported-toolchain/rules/tools"
+      , "patch-cbq": "imported-toolchain/patches/busybox-1593"
+      }
     }
   , "imported-toolchain/tools/cmake-3.27.1":
     { "repository":
@@ -471,7 +486,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "2e5e11a05c18b6cec59eaddb312869bef4805702"
+      , "commit": "b727fce66b3601bddf4f37d64a620caba5e8a786"
       , "subdir": "src/bootstrap"
       }
     }
@@ -480,7 +495,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "2e5e11a05c18b6cec59eaddb312869bef4805702"
+      , "commit": "b727fce66b3601bddf4f37d64a620caba5e8a786"
       , "subdir": "src/compilers"
       }
     }
@@ -489,7 +504,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "2e5e11a05c18b6cec59eaddb312869bef4805702"
+      , "commit": "b727fce66b3601bddf4f37d64a620caba5e8a786"
       , "subdir": "etc/defaults"
       }
     }
@@ -498,7 +513,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "2e5e11a05c18b6cec59eaddb312869bef4805702"
+      , "commit": "b727fce66b3601bddf4f37d64a620caba5e8a786"
       , "subdir": "etc/imports"
       }
     }
@@ -507,7 +522,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "2e5e11a05c18b6cec59eaddb312869bef4805702"
+      , "commit": "b727fce66b3601bddf4f37d64a620caba5e8a786"
       , "subdir": "toolchains"
       }
     }
@@ -516,7 +531,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "2e5e11a05c18b6cec59eaddb312869bef4805702"
+      , "commit": "b727fce66b3601bddf4f37d64a620caba5e8a786"
       , "subdir": "src/tools"
       }
     }
