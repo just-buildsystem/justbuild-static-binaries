@@ -8,7 +8,7 @@
     , "bindings":
       { "rules": "imported-toolchain/rules"
       , "tools": "imported-toolchain/tools-all"
-      , "compiler": "imported-toolchain/gcc-14.1.0-musl"
+      , "compiler": "imported-toolchain/gcc-14.2.0-musl"
       }
     }
   , "imported-toolchain/busybox-latest":
@@ -27,7 +27,7 @@
       , "cmake": "imported-toolchain/tools/cmake-3.27.1"
       }
     }
-  , "imported-toolchain/compilers/gcc-14.1.0-musl":
+  , "imported-toolchain/compilers/gcc-14.2.0-musl":
     { "repository": "imported-toolchain/compilers"
     , "target_file_name": "gcc-14-musl.TARGETS"
     , "bindings":
@@ -38,17 +38,17 @@
       , "gmp": "imported-toolchain/imports/gmp-6.3.0"
       , "mpc": "imported-toolchain/imports/mpc-1.3.1"
       , "mpfr": "imported-toolchain/imports/mpfr-4.2.1"
-      , "gcc": "imported-toolchain/compilers/gcc-14.1.0-native"
+      , "gcc": "imported-toolchain/compilers/gcc-14.2.0-native"
       , "mimalloc": "imported-toolchain/imports/mimalloc-2.1.2"
       }
     }
-  , "imported-toolchain/compilers/gcc-14.1.0-native":
+  , "imported-toolchain/compilers/gcc-14.2.0-native":
     { "repository":
       { "type": "archive"
-      , "content": "5ee9523adf9ef022a1e64c3b97f617c6e7192532"
-      , "fetch": "https://ftp.gnu.org/gnu/gcc/gcc-14.1.0/gcc-14.1.0.tar.gz"
-      , "sha256": "a0be066c02775002a0fa65ad3c65fb56a8bfd923d072a26ed148c0439ecdb68f"
-      , "subdir": "gcc-14.1.0"
+      , "content": "97ed2ad91801278cb7d89c720ee1dce6fa3e2a5d"
+      , "fetch": "https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz"
+      , "sha256": "a7b39bc69cbf9e25826c5a60ab26477001f7c08d85cec04bc0e29cabed6f3cc9"
+      , "subdir": "gcc-14.2.0"
       }
     , "target_root": "imported-toolchain/compilers"
     , "target_file_name": "gcc-14-native.TARGETS"
@@ -61,12 +61,12 @@
       , "patches": "imported-toolchain/patches"
       }
     }
-  , "imported-toolchain/gcc-14.1.0-musl":
+  , "imported-toolchain/gcc-14.2.0-musl":
     { "repository": "imported-toolchain/toolchains"
     , "target_file_name": "gcc.TARGETS"
     , "bindings":
       { "rules": "imported-toolchain/rules"
-      , "gcc": "imported-toolchain/compilers/gcc-14.1.0-musl"
+      , "gcc": "imported-toolchain/compilers/gcc-14.2.0-musl"
       }
     }
   , "imported-toolchain/imports/binutils-latest":
@@ -257,7 +257,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "2c1e0733981fc3fc7531530f13f56e9c28d457f5"
+      , "commit": "93720597f80740ec1121140e7f84401b766d70ab"
       , "subdir": "etc/patches"
       }
     }
@@ -326,7 +326,7 @@
     , "target_file_name": "tools.TARGETS"
     , "bindings":
       { "base": "imported-toolchain/rules/gcc"
-      , "gcc-musl": "imported-toolchain/compilers/gcc-14.1.0-musl"
+      , "gcc-musl": "imported-toolchain/compilers/gcc-14.2.0-musl"
       , "stage-0": "imported-toolchain/rules/stage-0"
       }
     }
@@ -486,7 +486,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "2c1e0733981fc3fc7531530f13f56e9c28d457f5"
+      , "commit": "93720597f80740ec1121140e7f84401b766d70ab"
       , "subdir": "src/bootstrap"
       }
     }
@@ -495,7 +495,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "2c1e0733981fc3fc7531530f13f56e9c28d457f5"
+      , "commit": "93720597f80740ec1121140e7f84401b766d70ab"
       , "subdir": "src/compilers"
       }
     }
@@ -504,7 +504,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "2c1e0733981fc3fc7531530f13f56e9c28d457f5"
+      , "commit": "93720597f80740ec1121140e7f84401b766d70ab"
       , "subdir": "etc/defaults"
       }
     }
@@ -513,7 +513,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "2c1e0733981fc3fc7531530f13f56e9c28d457f5"
+      , "commit": "93720597f80740ec1121140e7f84401b766d70ab"
       , "subdir": "etc/imports"
       }
     }
@@ -522,7 +522,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "2c1e0733981fc3fc7531530f13f56e9c28d457f5"
+      , "commit": "93720597f80740ec1121140e7f84401b766d70ab"
       , "subdir": "toolchains"
       }
     }
@@ -531,7 +531,7 @@
       { "type": "git"
       , "repository": "https://github.com/just-buildsystem/bootstrappable-toolchain"
       , "branch": "master"
-      , "commit": "2c1e0733981fc3fc7531530f13f56e9c28d457f5"
+      , "commit": "93720597f80740ec1121140e7f84401b766d70ab"
       , "subdir": "src/tools"
       }
     }

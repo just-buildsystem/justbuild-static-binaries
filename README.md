@@ -11,7 +11,7 @@ is acquired via [**Bootstrappable Builds**](https://bootstrappable.org/).
 Independent of the `x86_64` Linux build host, we can predict that for
 
 - **Justbuild Version:** v1.5.1
-- **Toolchain:** gcc-14.1.0-musl+tools
+- **Toolchain:** gcc-14.2.0-musl+tools
 
 binaries with the following hashes will be produced:
 
