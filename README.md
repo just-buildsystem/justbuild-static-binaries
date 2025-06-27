@@ -10,7 +10,7 @@ is acquired via [**Bootstrappable Builds**](https://bootstrappable.org/).
 
 Independent of the `x86_64` Linux build host, we can predict that for
 
-- **Justbuild Version:** v1.6.0-beta1
+- **Justbuild Version:** v1.6.0
 - **Toolchain:** gcc-14.2.0-musl+tools
 
 binaries with the following hashes will be produced:
